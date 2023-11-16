@@ -1,12 +1,9 @@
-# Fungsi untuk menghitung nilai akhir berdasarkan komponen nilai
 def hitung_nilai(tugas, uts, uas):
     nilai_akhir = (0.3 * tugas) + (0.35 * uts) + (0.35 * uas)
     return nilai_akhir
 
-# Inisialisasi list untuk menyimpan data
 data_siswa = []
 
-# Perulangan untuk memasukkan data
 while True:
     nama = input("Masukkan Nama siswa: ")
     nim = input("Masukkan NIM siswa: ")
@@ -14,10 +11,8 @@ while True:
     uts = float(input("Masukkan nilai UTS: "))
     uas = float(input("Masukkan nilai UAS: "))
 
-    # Memanggil fungsi hitung_nilai untuk menghitung nilai akhir
     nilai_akhir = hitung_nilai(tugas, uts, uas)
 
-    # Menambahkan data ke dalam list
     data_siswa.append({
         'Nama': nama,
         'NIM': nim,
@@ -27,12 +22,10 @@ while True:
         'Nilai Akhir': nilai_akhir
     })
 
-    # Tanya apakah ingin menambah data lagi atau tidak
     tambah_data = input("Tambah data lagi? (y/t): ")
     if tambah_data.lower() != 'y':
         break
 
-# Menampilkan daftar data
 print("\nDaftar Data Siswa:")
 print("===================================================================")
 print("No.  Nama\tNIM\t\tTugas\tUTS\tUAS\tNilai Akhir")
