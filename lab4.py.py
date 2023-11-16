@@ -8,7 +8,8 @@ data_siswa = []
 
 # Perulangan untuk memasukkan data
 while True:
-    nama = input("Masukkan nama siswa: ")
+    nama = input("Masukkan Nama siswa: ")
+    nim = input("Masukkan NIM siswa: ")
     tugas = float(input("Masukkan nilai tugas: "))
     uts = float(input("Masukkan nilai UTS: "))
     uas = float(input("Masukkan nilai UAS: "))
@@ -19,6 +20,7 @@ while True:
     # Menambahkan data ke dalam list
     data_siswa.append({
         'Nama': nama,
+        'NIM': nim,
         'Tugas': tugas,
         'UTS': uts,
         'UAS': uas,
@@ -33,7 +35,7 @@ while True:
 # Menampilkan daftar data
 print("\nDaftar Data Siswa:")
 print("===================================================================")
-print("No.  Nama\t\tTugas\tUTS\tUAS\tNilai Akhir")
+print("No.  Nama\tNIM\t\tTugas\tUTS\tUAS\tNilai Akhir")
 print("===================================================================")
 for idx, siswa in enumerate(data_siswa, start=1):
-    print(f"{idx}.   {siswa['Nama']}\t\t{siswa['Tugas']}\t{siswa['UTS']}\t{siswa['UAS']}\t{siswa['Nilai Akhir']}")
+    print(f"{idx}.   {siswa['Nama']}\t{siswa['NIM']}\t\t{siswa['Tugas']}\t{siswa['UTS']}\t{siswa['UAS']}\t{siswa['Nilai Akhir']}")
