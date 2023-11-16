@@ -1,7 +1,7 @@
 # lab-4
-## Tentu, berikut adalah penjelasan mengenai penguraian kode yang telah disediakan: 1.Fungsi "hitung_nilai`:
-   ## - Fungsi ini digunakan untuk menghitung nilai akhir dari seorang siswa berdasarkan komponen nilai yang telah ditentukan (tugas: 30%, UTS: 35%, UAS: 35%).
-   ## - Fungsi ini menerima tiga parameter yaitu `tugas`, `uts`, dan `uas` yang merupakan nilai dari tugas, UTS, dan UAS siswa.
+## 1.Fungsi "hitung_nilai`:
+   ## - digunakan untuk menghitung nilai akhir dari seorang siswa berdasarkan komponen nilai yang telah ditentukan (tugas: 30%, UTS: 35%, UAS: 35%).
+   ## - menerima tiga parameter yaitu `tugas`, `uts`, dan `uas` yang merupakan nilai dari tugas, UTS, dan UAS siswa.
    ## - Menggunakan rumus `(0.3 * tugas) + (0.35 * uts) + (0.35 * uas)` untuk menghitung nilai akhir.
 
 ## 2. Inisialisasi List `data_siswa`:
